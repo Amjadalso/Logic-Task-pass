@@ -1,0 +1,26 @@
+# Q1
+text_test = list(input("Enter Any string"))
+char_test = input("Enter the char which is delete")
+
+for char in text_test:
+    if char_test == char:
+        text_test.remove(char)
+print(text_test)
+
+
+# Q2
+list_given = []
+for i in range(2,100):
+    flg = True
+    for j in range(2,i):
+        if (i%j==0):
+            flg = False
+            break
+    if flg:
+        list_given.append(i)
+print(list_given)
+
+# Q3
+def count_char(char,list_str):
+    return list_str.count(char)
+print(count_char("A","AMJAD"))
